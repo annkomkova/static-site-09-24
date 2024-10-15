@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    <h1>Сайт о настольных играх</h1>
+  <body class="index">
+    <nav>
+      <a href="about.html">О проекте</a>
+    </nav>
+    <div class="mainInfo">
+      <h1>Каждая игра — это новая история. Погрузись в свою</h1>
+      <p>
+        Мы медиа, знакомящее читателя с миром настольных игр. Если ты хочешь
+        узнать больше о том,
+        <a href="articles/about-games.html">как устроены настолки</a>, оставайся
+        с нами на связи: скоро тут появится много статей
+      </p>
+      <form id="my-form" action="https://formspree.io/f/meojynag" method="POST">
+        <input type="email" name="email" placeholder="ivan-ivanov@gmail.com" />
+        <button id="my-form-button">Отправить</button>
+        <p id="my-form-status"></p>
+      </form>
+    </div>
+    <div class="model"></div>
+    <!-- <h1>Сайт о настольных играх</h1>
 
     <h2>Разделы</h2>
     <p><a href="articles.html">Статьи</a></p>
@@ -18,17 +36,7 @@
     <h2>Настольные игры</h2>
     <p><a href="boardgames/gloomhaven.html">Gloomhaven</a></p>
 
-    <!-- modify this form HTML and place wherever you want your form -->
-    <form id="my-form" action="https://formspree.io/f/meojynag" method="POST">
-      <label>Email:</label>
-      <input type="email" name="email" />
-      <!-- <label>Message:</label>
-      <input type="text" name="message" /> -->
-      <button id="my-form-button">Отправить</button>
-      <p id="my-form-status"></p>
-    </form>
 
-    <!-- Place this script at the end of the body tag -->
     <script>
       var form = document.getElementById('my-form')
 
@@ -65,6 +73,6 @@
           })
       }
       form.addEventListener('submit', handleSubmit)
-    </script>
+    </script> -->
   </body>
 </html>
