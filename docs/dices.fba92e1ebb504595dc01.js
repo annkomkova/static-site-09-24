@@ -62901,9 +62901,5 @@ function initThree() {
     renderer.setSize(renderWidth, renderHeight);
   }
 }
-;// CONCATENATED MODULE: ./src/index.js
-
-
-console.log('Сообщение в консоль, версия 2');
 /******/ })()
 ;
