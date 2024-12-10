@@ -4,11 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Статьи</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <p><a href="index.html">На главную</a></p>
-
+    <nav>
+      <a href="articles/about-games.html">О настольных играх</a>
+      <a href="index.html">На главную</a>
+    </nav>
     <h1>Статьи</h1>
-    <p><a href="articles/about-games.html">О настольных играх</a></p>
+
+    <div class="slider">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <a href="articles/about-games.html" class="slideLink firstSlide">
+              <div class="articleInfo">
+                <div class="articleTags">
+                  <div class="articleTag">теория</div>
+                  <div class="articleTag">для начинающих</div>
+                </div>
+                <h2 class="articleHeader">
+                  Как устроены настольные игры: ключевые механики, элементы и
+                  сеттинг
+                </h2>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="articles/about-games.html" class="slideLink secondSlide">
+              <div class="articleInfo">
+                <div class="articleTags">
+                  <div class="articleTag">практика</div>
+                  <div class="articleTag">для начинающих</div>
+                </div>
+                <h2 class="articleHeader">
+                  Топ-10 настольных игр для большой компании
+                </h2>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="articles/about-games.html" class="slideLink thirdSlide">
+              <div class="articleInfo">
+                <div class="articleTags">
+                  <div class="articleTag">теория</div>
+                  <div class="articleTag">для продвинутых</div>
+                </div>
+                <h2 class="articleHeader">
+                  Как рассчитать баланс в настольной игре
+                </h2>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <footer></footer>
   </body>
 </html>
