@@ -1,0 +1,103 @@
+.slider {
+  width: 98vw;
+  height: 60vw;
+  max-height: 420px;
+  margin: 0 auto;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      // color: white;
+      content: '';
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-image: url('https://img.icons8.com/?size=100&id=89208&format=png&color=ffffff');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .swiper-button-next {
+      transform: rotate(180deg);
+    }
+
+    .swiper-pagination-bullet {
+      width: 0.6rem;
+      height: 0.6rem;
+
+      &.swiper-pagination-bullet-active {
+        background-color: white;
+      }
+    }
+
+    .slideLink {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      padding: 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+      text-decoration: none;
+      color: white;
+
+      &.firstSlide {
+        background: rgb(238, 174, 202);
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+      }
+      &.secondSlide {
+        background: rgb(203, 174, 238);
+        background: radial-gradient(
+          circle,
+          rgba(203, 174, 238, 1) 0%,
+          rgba(148, 233, 198, 1) 100%
+        );
+      }
+      &.thirdSlide {
+        background: rgb(238, 174, 178);
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 178, 1) 0%,
+          rgba(233, 226, 148, 1) 100%
+        );
+      }
+
+      .articleInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .articleHeader {
+          font-size: 2rem;
+          font-weight: 500;
+          width: 80%;
+          text-align: center;
+        }
+
+        .articleTags {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+
+          .articleTag {
+            border-radius: 10px;
+            border: 1px solid white;
+            backdrop-filter: blur(10px);
+            padding: 0.6rem 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
