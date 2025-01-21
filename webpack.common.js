@@ -11,7 +11,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     dices: './src/javascripts/dices.js',
-    swiper: './src/javascripts/swiper.js'
+    swiper: './src/javascripts/swiper.js',
+    dictionary: './src/dictionary/dictionary.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -122,6 +123,13 @@ module.exports = {
       template: './src/boardgames/gloomhaven.html',
       filename: './boardgames/gloomhaven.html',
       chunks: ['index']
+    }),
+
+    // Страницы раздела игр (boardgames)
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/dictionary.html',
+      filename: './dictionary/dictionary.html',
+      chunks: ['dictionary']
     }),
 
     new CopyPlugin({
