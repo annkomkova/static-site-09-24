@@ -1,0 +1,68 @@
+body {
+  background-color: #1e1e1e;
+}
+.A_ADCUser {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &::before {
+    content: ' ';
+    width: 28px;
+    height: 28px;
+    background-image: url('../images/dictionary/Q_ADCSymbol.svg');
+  }
+  &::after {
+    content: ' ';
+    width: 36px;
+    height: 24px;
+    background-image: url('../images/dictionary/Q_ADCUserTexting.svg');
+  }
+}
+.A_Question {
+  padding: 12px 18px;
+  background-color: #1a1a1a;
+  color: #79ff39;
+  border-radius: 8px;
+  font-size: 22px;
+  width: fit-content;
+  max-width: 80%;
+  line-height: 1;
+  align-self: flex-end;
+}
+.A_AnswerMessage {
+  padding: 10px 12px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  border-radius: 8px;
+  line-height: 1.16;
+  width: 218px;
+  margin-left: 34px;
+}
+.C_AnswerMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.O_Story {
+  width: 320px;
+  height: 568px;
+  overflow: hidden;
+  padding: 30px 10px;
+  background-color: black;
+  border-radius: 10px;
+  position: relative;
+
+  .C_AnswerMessages {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+.S_Stories {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
