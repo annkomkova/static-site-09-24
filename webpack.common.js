@@ -12,7 +12,9 @@ module.exports = {
     index: './src/index.js',
     dices: './src/javascripts/dices.js',
     swiper: './src/javascripts/swiper.js',
-    dictionary: './src/dictionary/dictionary.js'
+    dictionary: './src/dictionary/dictionary.js',
+    jsBasic: './src/js-basic/js-basic.js',
+    select: './src/javascripts/select.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -130,6 +132,18 @@ module.exports = {
       template: './src/dictionary/dictionary.html',
       filename: './dictionary/dictionary.html',
       chunks: ['dictionary']
+    }),
+
+    // Основы JS и решения
+    new HtmlWebpackPlugin({
+      template: './src/js-basic/js-basic.html',
+      filename: './js-basic/js-basic.html',
+      chunks: ['jsBasic']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/select.html',
+      filename: './select.html',
+      chunks: ['select']
     }),
 
     new CopyPlugin({
