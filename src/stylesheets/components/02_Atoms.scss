@@ -68,3 +68,72 @@
 .A_FlipCardImage {
   width: 100%;
 }
+
+///мультиселект
+.A_MultiselectTitle {
+  color: rgb(50, 50, 50);
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.A_Chip {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  width: 100%;
+  color: rgb(76, 76, 76);
+  font-size: 1rem;
+
+  &:checked {
+    background-color: #eee;
+  }
+  &:hover {
+    background-color: #9bbbf7;
+    color: white;
+  }
+}
+
+.A_MultiselectCheckbox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  opacity: 0;
+
+  &:checked ~ .M_SelectField,
+  &:checked ~ .A_MultiselectHelp {
+    display: block;
+  }
+}
+
+.A_Tag {
+  background-color: cornflowerblue;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover {
+    transition: opacity 0.6s ease;
+    opacity: 1;
+  }
+}
+.A_MultiselectHelp {
+  font-size: 0.8rem;
+  color: #8e8e8e;
+  display: none;
+  position: absolute;
+  position: absolute;
+  top: -0.8rem;
+
+  code {
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.2rem;
+    background-color: #9bbbf7;
+    color: #fff;
+  }
+}

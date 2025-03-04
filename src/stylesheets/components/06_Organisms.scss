@@ -46,3 +46,18 @@
   }
     */
 }
+
+///мультиселект
+.O_Multiselect {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 1rem 2rem;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+}

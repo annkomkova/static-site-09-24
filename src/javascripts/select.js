@@ -1,3 +1,4 @@
+import '../index.css'
 import Cookies from 'js-cookie'
 
 console.clear()
@@ -5,7 +6,33 @@ document.addEventListener('DOMContentLoaded', () => {
   initModal()
   initFlipCard()
   initSwitch()
+  initMultiselect()
 })
+
+function initMultiselect() {
+  let multiselect = document.querySelectorAll('.W_Multiselect')
+  let label = document.querySelector('.C_Tags')
+  let select = document.querySelector('.M_SelectField')
+  let text = label.innerHTML
+  select.addEventListener('change', function (element) {
+    let selectedOptions = this.selectedOptions
+    label.innerHTML = ''
+    for (let option of selectedOptions) {
+      let button = document.createElement('button')
+      button.type = 'button'
+      button.classList.add('A_Tag')
+      button.textContent = option.value
+      button.addEventListener('click', () => {
+        option.selected = false
+        button.remove()
+        if (!select.selectedOptions.length) {
+          label.innerHTML = text
+        }
+      })
+      label.append(button)
+    }
+  })
+}
 
 function initSwitch() {
   const button = document.querySelector('.M_SwitchTheme')

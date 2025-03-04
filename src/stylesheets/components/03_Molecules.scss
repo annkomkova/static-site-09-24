@@ -65,3 +65,20 @@
     }
   }
 }
+
+///мультиселект
+.M_SelectField {
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  border: 1px solid #9bbbf7;
+  border-radius: 0 0 0.3rem 0.3rem;
+  outline-color: #9bbbf7;
+  z-index: 6;
+  display: none;
+
+  &[multiple] {
+    overflow-y: auto;
+  }
+}

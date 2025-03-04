@@ -6,6 +6,35 @@
     <title>Полезные решения JS</title>
   </head>
   <body>
+    <div class="S_Multiselect">
+      <div class="O_Multiselect">
+        <div class="W_Multiselect">
+          <div class="A_MultiselectTitle">Выберите категории</div>
+
+          <div class="W_MultiselectElements">
+            <label for="select" class="C_Tags">Категории</label>
+
+            <input
+              type="checkbox"
+              id="checkbox"
+              class="A_MultiselectCheckbox"
+            />
+            <p class="A_MultiselectHelp">
+              Зажмите клавишу <code>Сmd</code> или <code>Сtrl</code>, чтобы
+              выбрать несколько элементов
+            </p>
+
+            <select class="M_SelectField" name="category" id="select" multiple>
+              <option class="A_Chip" value="Все">Все</option>
+              <option class="A_Chip" value="Еврогейм">Еврогейм</option>
+              <option class="A_Chip" value="Америтреш">Америтреш</option>
+              <option class="A_Chip" value="Варгейм">Варгейм</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="O_PopUpContainer">
       <div class="W_PopUp">
         <div class="A_PopUpTitle">Заголок</div>
