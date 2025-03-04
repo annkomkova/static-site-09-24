@@ -9,4 +9,9 @@ body {
 
 body {
   font-family: 'PT Root UI', sans-serif;
+
+  &.dark {
+    background-color: rgb(58, 58, 58);
+    color: white;
+  }
 }
