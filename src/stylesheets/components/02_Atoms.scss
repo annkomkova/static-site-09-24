@@ -9,13 +9,13 @@
     content: ' ';
     width: 28px;
     height: 28px;
-    background-image: url('../images/dictionary/Q_ADCSymbol.svg');
+    background-image: url('../../images/dictionary/Q_ADCSymbol.svg');
   }
   &::after {
     content: ' ';
     width: 36px;
     height: 24px;
-    background-image: url('../images/dictionary/Q_ADCUserTexting.svg');
+    background-image: url('../../images/dictionary/Q_ADCUserTexting.svg');
   }
 }
 .A_Question {
@@ -38,4 +38,33 @@
   line-height: 1.16;
   width: 218px;
   margin-left: 34px;
+}
+
+/* select.html */
+.A_PopUpButton {
+  width: 16vw;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 2vw;
+  text-align: center;
+  margin: 50px;
+  cursor: pointer;
+}
+.A_PopUpTitle,
+.A_FlipCardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.A_PopUpText,
+.A_FlipCardDescription {
+  text-align: center;
+}
+.A_PopUpImage,
+.A_FlipCardImage {
+  width: 100%;
 }

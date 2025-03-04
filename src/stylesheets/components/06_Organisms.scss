@@ -1,0 +1,48 @@
+.O_Story {
+  width: 320px;
+  height: 568px;
+  overflow: hidden;
+  padding: 30px 10px;
+  background-color: black;
+  border-radius: 10px;
+  position: relative;
+
+  .C_AnswerMessages {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+.O_PopUpContainer {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(39, 39, 39, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+
+  &.visible {
+    display: flex;
+  }
+}
+.O_FlipCard {
+  background-color: transparent;
+  border-radius: 1rem;
+  width: 200px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  perspective: 1000px;
+  cursor: pointer;
+
+  /* &:hover .W_FlipCard {
+    transform: rotateY(180deg);
+  }
+    */
+}

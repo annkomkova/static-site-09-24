@@ -143,7 +143,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/select.html',
       filename: './select.html',
-      chunks: ['select']
+      chunks: ['index', 'select']
     }),
 
     new CopyPlugin({
