@@ -17,7 +17,8 @@ module.exports = {
     swiper: './src/javascripts/swiper.js',
     dictionary: './src/pages/dictionary/dictionary.js',
     jsBasic: './src/pages/js-basic/js-basic.js',
-    select: './src/javascripts/select.js'
+    select: './src/javascripts/select.js',
+    htmlContent: './src/javascripts/htmlContent.js'
   },
 
   output: {
@@ -77,14 +78,14 @@ module.exports = {
   plugins: [
     ...htmlWebpackPlugins,
     ...htmlWebpackPartialsPlugins,
-    new webpack.HotModuleReplacementPlugin()
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {
-    //       from: 'src/images',
-    //       to: 'images'
-    //     }
-    //   ]
-    // }),
+    new webpack.HotModuleReplacementPlugin(),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: 'src/3d',
+          to: '3d'
+        }
+      ]
+    })
   ]
 }

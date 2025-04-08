@@ -1,4 +1,6 @@
 .index {
+  height: 6000px;
+
   nav {
     width: 100%;
     height: 48px;
@@ -11,6 +13,13 @@
       text-decoration: none;
       color: grey;
     }
+  }
+
+  .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .mainInfo {
@@ -57,8 +66,21 @@
     }
   }
 
+  .dices {
+    height: 140vw;
+  }
+  .dice1 {
+    background-color: red;
+  }
+  .dice2 {
+    background-color: green;
+  }
+  .dice3 {
+    background-color: blue;
+  }
+
   .model {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
   }

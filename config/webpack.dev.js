@@ -3,13 +3,6 @@ const common = require('./webpack.common.js')
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-// var syntax = require('postcss-scss')
-// postcss(plugins)
-//   .process(scss, { syntax: syntax })
-//   .then(function (result) {
-//     result.content // SCSS with transformations
-//   })
-
 module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
