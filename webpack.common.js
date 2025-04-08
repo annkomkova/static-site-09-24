@@ -14,7 +14,8 @@ module.exports = {
     swiper: './src/javascripts/swiper.js',
     dictionary: './src/dictionary/dictionary.js',
     jsBasic: './src/js-basic/js-basic.js',
-    select: './src/javascripts/select.js'
+    select: './src/javascripts/select.js',
+    search: './src/javascripts/search-vanilla.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -144,6 +145,11 @@ module.exports = {
       template: './src/select.html',
       filename: './select.html',
       chunks: ['index', 'select']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'search']
     }),
 
     new CopyPlugin({
