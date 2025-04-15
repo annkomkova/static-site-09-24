@@ -39,16 +39,13 @@ const container = document.querySelector('.S_Content')
 
 function update(content) {
   const href = window.location.href.split('/').pop().split('.')[0]
+  console.log(href)
 
   setTimeout(() => {
     content.forEach((stroke) => {
-      console.log(stroke)
-
-      if (href == stroke.page) {
+      if (href === stroke.page) {
         console.log(stroke.page)
         createContentCard(stroke)
-      } else {
-        console.log('lox')
       }
     })
   }, 200)
@@ -72,7 +69,7 @@ function createContentCard(contentItemData) {
   contentItem.appendChild(contentItemTitle)
 
   const text = contentItemData.text.split('<br>')
-  console.log(text.length)
+
   for (let i = 0; i < text.length; i++) {
     const contentItemDescription = document.createElement('div')
     contentItemDescription.classList.add('A_ContentItemDescription')
