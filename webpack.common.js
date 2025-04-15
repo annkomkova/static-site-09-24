@@ -15,7 +15,8 @@ module.exports = {
     dictionary: './src/dictionary/dictionary.js',
     jsBasic: './src/js-basic/js-basic.js',
     select: './src/javascripts/select.js',
-    search: './src/javascripts/search-vanilla.js'
+    search: './src/javascripts/search-vanilla.js',
+    reactBasics: './src/javascripts/react-basics.jsx'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -150,6 +151,11 @@ module.exports = {
       template: './src/search.html',
       filename: './search.html',
       chunks: ['index', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/react-basics.html',
+      filename: './react-basics.html',
+      chunks: ['reactBasics']
     }),
 
     new CopyPlugin({
