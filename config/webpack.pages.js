@@ -35,7 +35,11 @@ const htmlWebpackPlugins = [
   ]),
   createPages('./src/pages/select.html', 'select.html', ['index', 'select']),
   createPages('./src/pages/test.html', 'test.html', ['index', 'htmlContent']),
-  createPages('./src/pages/test1.html', 'test1.html', ['index', 'htmlContent'])
+  createPages('./src/pages/test1.html', 'test1.html', ['index', 'htmlContent']),
+  createPages('./src/pages/search.html', 'search.html', [
+    'index',
+    'searchReact'
+  ])
 ]
 
 module.exports = htmlWebpackPlugins

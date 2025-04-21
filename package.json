@@ -41,7 +41,11 @@
   "dependencies": {
     "airtable": "^0.12.2",
     "caniuse-lite": "^1.0.30001707",
+    "classes": "^0.3.0",
+    "classnames": "^2.5.1",
     "js-cookie": "^3.0.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "three": "^0.169.0"
   }
 }

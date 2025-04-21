@@ -148,3 +148,150 @@
     }
   }
 }
+
+/* Общие стили */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+/* A_Input */
+.A_Input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.A_Input:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+/* A_Button */
+.A_Button {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-left: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.A_Button.primary {
+  background: #0070f3;
+  color: white;
+  border: none;
+}
+
+.A_Button.primary:hover {
+  background: #0059c1;
+}
+
+.A_Button.resetField {
+  background: #eee;
+  color: #333;
+  border: none;
+}
+
+.A_Button.resetField:hover {
+  background: #ddd;
+}
+
+.A_Button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* A_Text */
+.A_Text.h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.A_Text.p {
+  font-size: 14px;
+  color: #555;
+}
+
+.A_Text.tag {
+  display: inline-block;
+  font-size: 12px;
+  color: #0070f3;
+  background: #e5f0ff;
+  padding: 2px 8px;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+/* M_PostTeaser */
+.M_PostTeaser {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 16px;
+  background: white;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.M_PostTeaser:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.C_postTeaserTags {
+  margin-top: 10px;
+}
+
+/* M_PostSuggestion */
+.M_PostSuggestion {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 20px;
+  background: #fff;
+  transition: background 0.2s ease;
+}
+
+.M_PostSuggestion:hover {
+  background: #f5faff;
+}
+
+/* M_SearchForm */
+.M_SearchForm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* O_SearchBar */
+.O_SearchBar {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* C_PostSuggestions */
+.C_PostSuggestions {
+  position: absolute;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  background-color: white;
+}
+
+/* S_SearchContent */
+.S_SearchContent {
+  max-width: 800px;
+  margin: 40px auto;
+}
