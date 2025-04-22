@@ -1,6 +1,6 @@
 # 🧱 Static Site Boilerplate
 
-Шаблон для создания статических сайтов с использованием Webpack, SCSS и модульной структуры. В репозитории хранится учебный материал для группы Б23ДЗ09 направления "Дизайн и программирование" Школы Дизайна НИУ ВШЭ.
+Шаблон для создания статических сайтов с использованием Webpack, SCSS и модульной структуры. В репозитории хранится учебный материал для группы Б23ДЗ09 бакалавриата ["Дизайн и программирование"](https://design.hse.ru/ba/design/programming) Школы Дизайна НИУ ВШЭ.
 
 ## 🚀 Возможности
 
@@ -13,7 +13,25 @@
 
 ## 📁 Структура проекта
 
-static-site-09-24/ ├── src/ │ ├── fonts/ # Шрифты ├── images/ # Изображения ├── styles/ # SCSS-файлы ├── scripts/ # JavaScript-файлы ├── partials/ # Webpack-partials ├── components/ # React-компоненты │ ├── index.js # Подключение кода для всего сайта ├── index.css # Подключение всех стилей └── index.html # Главная HTML-страница ├── docs/ # Сборка проекта ├── webpack.common.js # Общие настройки Webpack ├── webpack.dev.js # Настройки для разработки ├── webpack.prod.js # Настройки для продакшена ├── package.json └── README.md
+```
+. static-site-09-24/
+├── src/
+│ ├── fonts/ # Шрифты
+│ ├── images/ # Изображения
+│ ├── styles/ # SCSS-файлы
+│ ├── scripts/ # JavaScript-файлы
+│ ├── partials/ # Webpack-partials
+│ ├── components/ # React-компоненты
+│ ├── index.js # Подключение кода для всего сайта
+│ ├── index.css # Подключение всех стилей
+│ └── index.html # Главная HTML-страница
+├── docs/ # Сборка проекта
+├── webpack.common.js # Общие настройки Webpack
+├── webpack.dev.js # Настройки для разработки
+├── webpack.prod.js # Настройки для продакшена
+├── package.json
+└── README.md
+```
 
 ## 🛠 Установка и запуск
 
