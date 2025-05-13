@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/pt-root-ui_bold..ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/pt-root-ui_medium..ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/pt-root-ui_regular..ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/pt-root-ui_light..ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'PT Root UI', sans-serif;
+
+  &.dark {
+    background-color: rgb(58, 58, 58);
+    color: white;
+  }
+}
+
+.O_Search {
+  display: flex;
+  margin: 50px auto;
+  align-items: center;
+  gap: 10px;
+  max-width: 30%;
+}
+
+.A_SearchInput {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 250px;
+  height: 48px;
+  background-color: transparent;
+  padding: 1px 8px;
+
+  &:focus {
+    border-color: inherit;
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.A_SearchButton {
+  padding: 16px 20px;
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+
+  &.disable {
+    background-color: lightgray;
+    color: grey;
+    cursor: default;
+  }
+}
+
+body {
+  background-color: #1e1e1e;
+}
+.A_ADCUser {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &::before {
+    content: ' ';
+    width: 28px;
+    height: 28px;
+    background-image: url(images/4731dd72da215d9af18d.svg);
+  }
+  &::after {
+    content: ' ';
+    width: 36px;
+    height: 24px;
+    background-image: url(images/0c3d037b9c427d478138.svg);
+  }
+}
+.A_Question {
+  padding: 12px 18px;
+  background-color: #1a1a1a;
+  color: #79ff39;
+  border-radius: 8px;
+  font-size: 22px;
+  width: fit-content;
+  max-width: 80%;
+  line-height: 1;
+  align-self: flex-end;
+}
+.A_AnswerMessage {
+  padding: 10px 12px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  border-radius: 8px;
+  line-height: 1.16;
+  width: 218px;
+  margin-left: 34px;
+}
+.C_AnswerMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.O_Story {
+  width: 320px;
+  height: 568px;
+  overflow: hidden;
+  padding: 30px 10px;
+  background-color: black;
+  border-radius: 10px;
+  position: relative;
+
+  .C_AnswerMessages {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+.S_Stories {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+

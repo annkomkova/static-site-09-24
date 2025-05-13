@@ -1,0 +1,1 @@
+(()=>{"use strict";new Swiper(".swiper",{loop:!0,autoplay:{delay:5e3},effect:"cards",pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}})})();
